@@ -32,11 +32,11 @@
  
  @see https://github.com/ejvaughan/SimpleFormatLanguage for more information.
  
- @param format The simple format string containing the constraint description
+ @param format The simple format string containing the constraint description. Raises an @c NSInvalidArgumentException if @c format is nil.
  @param metrics A dictionary of constants that replace named values in @c format. The keys are the placeholder names, and the values are NSNumber objects.
- @param views A dictionary of views that appear in @c format. The keys are the names of the views in the format string, and the values are the views themselves.
+ @param views A dictionary of views that appear in @c format. The keys are the names of the views in the format string, and the values are the views themselves. Raises an @c NSInvalidArgumentException if @c views is nil.
  
- @return A constraint
+ @return A constraint, or nil if there was an error parsing the format string
  
  */
 

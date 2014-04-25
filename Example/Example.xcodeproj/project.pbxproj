@@ -19,10 +19,10 @@
 		AA50971A1849B3890088B0AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA5096F91849B3890088B0AE /* Foundation.framework */; };
 		AA50971B1849B3890088B0AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA5096FD1849B3890088B0AE /* UIKit.framework */; };
 		AA5097231849B3890088B0AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA5097211849B3890088B0AE /* InfoPlist.strings */; };
-		AA5097251849B3890088B0AE /* ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5097241849B3890088B0AE /* ExampleTests.m */; };
 		AA5097331849B39D0088B0AE /* EVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA50972F1849B39D0088B0AE /* EVViewController.m */; };
 		AA50973F1849B6E90088B0AE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AA50973C1849B6E90088B0AE /* README.md */; };
 		AA5097401849B6E90088B0AE /* NSLayoutConstraint+SimpleFormatLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = AA50973D1849B6E90088B0AE /* NSLayoutConstraint+SimpleFormatLanguage.m */; };
+		AA7C87F11909ABDE0017C7FA /* EVSimpleFormatLanguageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7C87F01909ABDE0017C7FA /* EVSimpleFormatLanguageTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,12 +52,12 @@
 		AA5097181849B3890088B0AE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		AA5097201849B3890088B0AE /* ExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ExampleTests-Info.plist"; sourceTree = "<group>"; };
 		AA5097221849B3890088B0AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		AA5097241849B3890088B0AE /* ExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleTests.m; sourceTree = "<group>"; };
 		AA50972E1849B39D0088B0AE /* EVViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVViewController.h; sourceTree = "<group>"; };
 		AA50972F1849B39D0088B0AE /* EVViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVViewController.m; sourceTree = "<group>"; };
 		AA50973C1849B6E90088B0AE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 		AA50973D1849B6E90088B0AE /* NSLayoutConstraint+SimpleFormatLanguage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+SimpleFormatLanguage.m"; path = "../../NSLayoutConstraint+SimpleFormatLanguage.m"; sourceTree = "<group>"; };
 		AA50973E1849B6E90088B0AE /* NSLayoutConstraint+SimpleFormatLanguage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+SimpleFormatLanguage.h"; path = "../../NSLayoutConstraint+SimpleFormatLanguage.h"; sourceTree = "<group>"; };
+		AA7C87F01909ABDE0017C7FA /* EVSimpleFormatLanguageTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVSimpleFormatLanguageTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,8 +143,8 @@
 		AA50971E1849B3890088B0AE /* ExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				AA5097241849B3890088B0AE /* ExampleTests.m */,
 				AA50971F1849B3890088B0AE /* Supporting Files */,
+				AA7C87F01909ABDE0017C7FA /* EVSimpleFormatLanguageTests.m */,
 			);
 			path = ExampleTests;
 			sourceTree = "<group>";
@@ -278,7 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA5097251849B3890088B0AE /* ExampleTests.m in Sources */,
+				AA7C87F11909ABDE0017C7FA /* EVSimpleFormatLanguageTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

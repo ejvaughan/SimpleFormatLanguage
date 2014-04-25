@@ -34,6 +34,14 @@
     self = [super init];
     
     if (self) {
+        if (!string) {
+            @throw [NSException exceptionWithName:NSInvalidArgumentException reason:@"format argument must not be nil" userInfo:nil];
+        }
+        
+        if (!views) {
+            @throw [NSException exceptionWithName:NSInvalidArgumentException reason:@"views argument must not be nil" userInfo:nil];
+        }
+        
         _string = string;
         _metrics = metrics;
         _views = views;
@@ -85,7 +93,13 @@
 {
     for (NSString *view in self.views) {
         if ([self.scanner scanString:view intoString:NULL]) {
-            return [self.views objectForKey:view];
+            id matchedView = [self.views objectForKey:view];
+            
+            if (![matchedView isKindOfClass:[UIView class]]) {
+                return nil;
+            }
+            
+            return matchedView;
         }
     }
     
@@ -100,8 +114,15 @@
         return @(number);
     
     for (NSString *metric in self.metrics) {
-        if ([self.scanner scanString:metric intoString:NULL])
-            return [self.metrics objectForKey:metric];
+        if ([self.scanner scanString:metric intoString:NULL]) {
+            id matchedMetric = [self.metrics objectForKey:metric];
+            
+            if (![matchedMetric isKindOfClass:[NSNumber class]]) {
+                return nil;
+            }
+            
+            return matchedMetric;
+        }
     }
     
     return nil;
